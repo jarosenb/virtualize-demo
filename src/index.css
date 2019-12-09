@@ -1,13 +1,49 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules//react-virtualized/styles.css";
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+
 }
+.ReactVirtualized__Grid {
+  outline: none;
+}
+
+.table-header {
+  text-transform: none;
+}
+.table-header-row {
+  font-size: 16px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 50px;
+}
+
+.table-row {
+  display : flex;
+  align-items : center;
+  justify-content: center;
+
+  font-size: 16px;
+  border-top: 1px solid #e0e0e0;
+
+}
+.table-row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tableColumn {
+  align-items: center;
+  display: flex;
+
+  min-width: 0;
+}
+
